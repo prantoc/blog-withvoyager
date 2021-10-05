@@ -9,4 +9,9 @@ use Illuminate\Database\Eloquent\Model;
 class HomeImg extends Model
 {
     use HasFactory;
+
+
+    public function homeimg() {
+        return $this->belongsTo(Homepage::class, 'home_id');
+    }
 }
