@@ -47,7 +47,7 @@
       </div>
       </header><!-- End Header -->
       <!-- ======= Hero Section ======= -->
-      <section id="portfolio"  style="height: 436px;">
+      <section id="portfolio">
         <div class="container" data-aos="fade-up">
           <div class="row">
 
@@ -98,10 +98,10 @@
               <section id="service" class="services section-bg">
                 <div class="container" data-aos="fade-up">
                   <div class="section-title">
-                    <h2>Sevices</h2>
+                    <h2>Services</h2>
                     <div class="row">
                       @foreach($services as $service)
-                        <div class="col-md-3 p-4"><i class="ri-check-double-line"></i> {{$service->service}}</div>
+                        <div class="col-md-3 p-1"><i class="ri-check-double-line" style="color: #124265;"></i> {{$service->service}}</div>
                       @endforeach
                     </div>
                   </div>
