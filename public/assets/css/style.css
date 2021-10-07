@@ -59,6 +59,7 @@ ul {
   opacity: 1;
 }
 
+
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -128,7 +129,7 @@ ul {
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }*/
 #header .logo {
-  /*max-height: 20px;*/
+    width: 111%;
 }
 #header .logo a {
   color: #16507b;
@@ -457,7 +458,7 @@ ul {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 80px 0;
+  padding: 15px 0;
   overflow: hidden;
 }
 
@@ -1347,6 +1348,8 @@ section {
 .contact .info {
   width: 100%;
   background: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 .contact .info i {
   font-size: 20px;

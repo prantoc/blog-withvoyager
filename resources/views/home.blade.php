@@ -47,21 +47,21 @@
       </div>
       </header><!-- End Header -->
       <!-- ======= Hero Section ======= -->
-      <section id="portfolio" class="portfolio">
+      <section id="portfolio"  style="height: 436px;">
         <div class="container" data-aos="fade-up">
-          <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="300">
+          <div class="row">
 
           @foreach ($homeimgs as $homeimg)
           @foreach(json_decode($homeimg->imgs, true) as $image)
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <div class="portfolio-wrap">
-                <img src="{{ Voyager::image($image)}}" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 d-flex align-items-center justify-content-center">
+              
+                <img src="{{ Voyager::image($image)}}" alt="">
                 {{-- <div class="portfolio-info">
                   <div class="portfolio-links">
                     <a href="{{ Voyager::image($image)}}" data-gallery="portfolioGallery" class="portfolio-lightbox"><i class="bx bx-plus"></i></a>
                   </div>
                 </div> --}}
-              </div>
+              
             </div>
           @endforeach
           @endforeach
