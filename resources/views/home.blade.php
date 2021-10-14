@@ -80,14 +80,14 @@
                 <div class="col-lg-4">
                   <img src="{{ Voyager::image( $home->offer_img) }}" alt="">
                 </div>
-                <div class="col-lg-8 pt-4 pt-lg-0">
+                <div class="col-lg-8" style="font-size: 1.4rem;">
                   {!! $home->offer_description !!}
                 </div>
               </div>
             </div>
             </section><!-- End About Section -->
             <!-- ======= Testimonials Section ======= -->
-            <section id="introduction" class="testimonials">
+            <section id="introduction" class="testimonials pt-2">
               <div class="container" data-aos="fade-up">
                 <div class="section-title">
                   <h2>{{$home->intro_title}}</h2>
@@ -95,13 +95,18 @@
                 </div>
               </div>
               </section><!-- End Testimonials Section -->
-              <section id="service" class="services section-bg">
+              <section id="service" class="services section-bg pt-2">
                 <div class="container" data-aos="fade-up">
                   <div class="section-title">
                     <h2>Services</h2>
-                    <div class="row">
+                    <div class="row" style="text-align: start;">
                       @foreach($services as $service)
-                        <div class="col-md-3 p-1"><i class="ri-check-double-line" style="color: #124265;"></i> {{$service->service}}</div>
+                      <div class="col-md-2"></div>
+                        <div class="col-md-4 py-1" style="font-size: 17px; font-weight: 600;">
+                          <i class="ri-check-double-line" style="color:#44bd32;"></i> 
+                          {{$service->service}}
+                        </div>
+                      {{-- <div class="col-md-1"></div> --}}
                       @endforeach
                     </div>
                   </div>
@@ -135,7 +140,7 @@
                   </div>
                 </section><!-- End Sevices Section -->
                   <!-- ======= Contact Section ======= -->
-                  <section id="area" class="contact section-bg">
+                  <section id="area" class="contact section-bg pt-2">
                     <div class="container" data-aos="fade-up">
                       <div class="section-title">
                         <h2>Contact</h2>
